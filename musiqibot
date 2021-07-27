@@ -1,0 +1,85 @@
+const { Telegraf } = require('telegraf')
+const BOT_TOKEN = '1709964937:AAHSJSRbNl5P6ZBKApsUP6nDjZyW9p38n0g'
+const bot = new Telegraf(BOT_TOKEN)
+const channelID = "-1001525895163"
+const owner = "MenZroyam"
+const kanal = "BTCEtiraf"
+const botusername = 'EtirafCafe_BOT'
+
+bot.start((ctx) => {
+    ctx.reply(`Mən etiraf botuyam başıyam.`,{
+    	reply_markup: {
+    		inline_keyboard: [
+
+[{text: 'Sahibim', url: `https://t.me/${owner}`}],
+[{text: 'Kanalımız', url: `https://t.me/${kanal}`}]
+    		]
+    	}
+    })
+})
+
+let text
+let etirafEden;
+bot.on('text', ctx => {
+     text = ctx.message.text
+
+
+   ctx.reply(`Etiraf açıq olsun bağlı?.`,{
+    	reply_markup: {
+    		inline_keyboard: [
+
+[{text: 'Açıq', callback_data: `aciq`}],
+[{text: 'Bağlı', callback_data: `bagli`}]
+    		]
+    	}
+    })
+
+
+//    ctx.telegram.sendMessage(channelID, `Sender ID: ${ctx.from.id}\nSender First Name: [${ctx.from.first_name}](tg://user?id=${ctx.from.id})\nText: ${text}`, {parse_mode: 'markdown'})
+  //  ctx.reply('My owner will contact you soon.')
+
+})
+
+
+bot.action('bagli', ctx => {
+ctx.deleteMessage();
+ctx.telegram.sendMessage(ctx.from.id, 'etirafiniz yoxlanisa gonderildi')
+
+var etirafEden = `Etirafı göndərən şəxs: Gizli\n\n`
+var etiraf = `Etdiyi etiraf: ${text}\n\n`
+var end = `Etiraf etmək üçün @${botusername} yazın.\n\n`
+var umumi = etirafEden+etiraf+end
+	ctx.telegram.sendMessage(channelID, `Etitaf tipi: Gizli\nEtiraf göndərən şəxsin IDsi: ${ctx.from.id}\nGöndərən şəxisin adı: ${ctx.from.first_name}\nEtirafı: ${text}`,{
+		reply_markup: {
+			inline_keyboard: [
+[{text: 'Kanala göndər', url : `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=@${kanal}&parse_mode=markdown&text=${umumi}`}]
+			]
+		}
+	})
+})
+
+
+
+bot.action('aciq', ctx => {
+ctx.deleteMessage();
+
+
+ctx.telegram.sendMessage(ctx.from.id, 'etirafiniz yoxlanisa gonderildi')
+
+var etirafEden = `Etirafı göndərən şəxs: ${ctx.from.first_name}\n\n`
+var etiraf = `Etdiyi etiraf: ${text}\n\n`
+var end = `Etiraf etmək üçün @${botusername} yazın.\n\n`
+var umumi = etirafEden+etiraf+end
+	ctx.telegram.sendMessage(channelID, `Etitaf tipi: Açıq\nEtiraf göndərən şəxsin IDsi: ${ctx.from.id}\nGöndərən şəxisin adı: ${ctx.from.first_name}\nEtirafı: ${text}`,{
+		reply_markup: {
+			inline_keyboard: [
+[{text: 'Kanala göndər', url : `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=@${kanal}&parse_mode=markdown&text=${umumi}`}]
+			]
+		}
+	})
+})
+
+
+console.log('Bot is running.')
+
+bot.launch()
