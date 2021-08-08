@@ -21,7 +21,7 @@ class Messages():
       HELP_MSG = [
         ".",
 f"""
-**Salam 👋 Xoş gəldin {PROJECT_NAME}
+**Salam. 👋 Xoş gəldin {PROJECT_NAME}
 
 ⚪️ {PROJECT_NAME} qrup və kanalınızın səsli söhbətində musiqi çala bilir.
 ⚪️ Assistantın adı >> @{ASSISTANT_NAME}\n\nClick next for instructions**
