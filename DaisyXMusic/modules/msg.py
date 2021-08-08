@@ -84,7 +84,7 @@ channel is also can be used instead of c ( /cplay = /channelplay )
 f"""
 **=>> Daha çox 🧑‍🔧**
 
-- /musicplayer [on/off]: Enable/Disable Music player
+
 - /admincache: Grupda admin siyahısını yeniləyir
 - /userbotjoin: @{ASSISTANT_NAME} grupa dəvət et
 
