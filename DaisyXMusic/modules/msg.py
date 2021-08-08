@@ -17,19 +17,19 @@
 import os
 from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
+      START_MSG = "**Salam 👋 [{}](tg://user?id={})!**\n\n🤖 Telegram Qrupları və Kanallarının səsli söhbətlərində musiqi oxumaq üçün yaradılmış bir botam.\n\n✅ Mənə /help yazaraq ətraflı məlumat alın."
       HELP_MSG = [
         ".",
 f"""
-**Hey 👋 Welcome back to {PROJECT_NAME}
+**Salam 👋 Xoş gəldin {PROJECT_NAME}
 
 ⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
 
-⚪️ Assistant name >> @{ASSISTANT_NAME}\n\nClick next for instructions**
+⚪️ Assistantın adı >> @{ASSISTANT_NAME}\n\nClick next for instructions**
 """,
 
 f"""
-**Setting up**
+**Ayarlamaq üçün məlumat**
 
 1) Make bot admin (Group and in channel if use cplay)
 2) Start a voice chat
