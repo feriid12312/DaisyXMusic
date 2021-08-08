@@ -38,7 +38,7 @@ f"""
 5. /play [Mahnı adı] Və asistan səsli söhbətdə mahnı oxumaga davam edəcəkdir!
 **Commands**
 
-**=>> Song Playing 🎧**
+**=>> Əmrlər 🎧**
 
 - /play: İstədiyiniz mahnı adını daxil edin.
 - /play [Bir mahnıya yanıt]: Yanıt verdiyiniz mahnını oxuyur
@@ -53,8 +53,7 @@ f"""
 - /current: Hazırda oxuyan mahnını göstərir
 - /playlist: Hazırda tələb olunan mahnı siyası
 
-*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.
-""",
+
         
 f"""
 **=>> Kanal Muzik grulumu üçün irəli 🛠**
