@@ -55,9 +55,10 @@ f"""
 
 
         
-f"""
-**=>> Kanal Muzik grulumu üçün irəli 🛠**
 
+**=>> Kanal Muzik grulumu üçün irəli 🛠**
+""",
+f"""
 ⚪️ For linked group admins only:
 
 - /cplay: [Mahnı adı] 
