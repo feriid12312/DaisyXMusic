@@ -93,10 +93,10 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📲 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '💬 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton("➕ Məni qrupa əlavə et 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton(text = '📲 Yeniliklər', url=f"https://t.me/{UPDATES_CHANNEL}"),
+             InlineKeyboardButton(text = '💬 Dəstək qrupu', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '🛠 Sahibim 🛠', url=f"https://{SOURCE_CODE}")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -111,7 +111,7 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**🙋‍♀️ Hello there! I can play music in the voice chats of telegram groups & channels.**""",
+        f"""**🙋‍♀️ Salam hərkəsə! Mən musiqi oxumaq üçün bu qrupa qoşuldum.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
