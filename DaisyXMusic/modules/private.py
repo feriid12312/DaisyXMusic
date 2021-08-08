@@ -30,12 +30,15 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ meni qrupa elave et 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ Məni qrupa əlavə et 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 yenilik", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📲 Yeniliklər", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 salom", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "💬 Dəstək qrupu", url=f"https://t.me/{SUPPORT_GROUP}")
+                ],[
+                    InlineKeyboardButton(
+                        "🛠 Sahibim 🛠", url=f"https://{SOURCE_CODE}")
                 ]
             ]
         ),
