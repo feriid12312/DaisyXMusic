@@ -67,10 +67,10 @@ def song(client, message):
         results[0]["views"]
 
     except Exception as e:
-        m.edit("❌ Found Nothing.\n\nTry another keywork or maybe spell it properly.")
+        m.edit("❌ Heç nə tapılmadı.\n\nTry another keywork or maybe spell it properly.")
         print(str(e))
         return
-    m.edit("Downloading the song ")
+    m.edit("Mahnı yüklənir...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
