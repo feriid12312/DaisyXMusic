@@ -23,8 +23,7 @@ class Messages():
 f"""
 **Salam 👋 Xoş gəldin {PROJECT_NAME}
 
-⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
-
+⚪️ {PROJECT_NAME} qrup və kanalınızın səsli söhbətində musiqi çala bilir.
 ⚪️ Assistantın adı >> @{ASSISTANT_NAME}\n\nClick next for instructions**
 """,
 
