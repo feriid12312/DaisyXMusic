@@ -36,9 +36,6 @@ def _start(client, message):
                         "📲 Yeniliklər", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
                         "💬 Dəstək qrupu", url=f"https://t.me/{SUPPORT_GROUP}")
-                ],[
-                    InlineKeyboardButton(
-                        "Sahibim", url=f"https://{SOURCE_CODE}")
                 ]
             ]
         ),
