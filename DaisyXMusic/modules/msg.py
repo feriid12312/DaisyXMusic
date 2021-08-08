@@ -17,34 +17,22 @@
 import os
 from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Salam 👋 [{}](tg://user?id={})!**\n\n🤖 Telegram Qrupları və Kanallarının səsli söhbətlərində musiqi oxumaq üçün yaradılmış bir botam.\n\n✅ Mənə /help yazaraq ətraflı məlumat alın."
+      START_MSG = "👋 **Salam [{}](tg://user?id={})!**\nMən Telegram gruplarında səsli söhbətdə musiqi dinləmək üçün yaradılan botam\nMəni grupa əlavə edərək admin hüquqları verin\nƏmrlər və daha ətraflı məlumat üçün /help."
       HELP_MSG = [
         ".",
 f"""
-**Salam. 👋 Xoş gəldin {PROJECT_NAME}
-
-⚪️ {PROJECT_NAME} qrup və kanalınızın səsli söhbətində musiqi çala bilir.
-⚪️ Assistantın adı >> @{ASSISTANT_NAME}\n\nMəlumat üçün növbəti düyməni basın**
-""",
-
-f"""
-**Ayarlamaq üçün məlumat**
-
+Telegram {PROJECT_NAME} Haqqında Kömək və əmrlər! 
+**QURULUM**
 1. Botu Grupa Əlavə edin
 2. Botu Admin edin
 3. Səsli söhbəti başladın
 4. Adminlərdən biri mahnı adı yazmadan sadəcə /play göndərin 
-- Bu zaman @{ASSISTANT_NAME} grupa qatılmalıdı əgər qatılmazsa əl ilə qatın
+- Bu zaman @{ASSISTANT_NAME} grupa qatılmaıdı qatılmazsa əl ilə qatın
 5. /play [Mahnı adı] Və asistan səsli söhbətdə mahnı oxumaga davam edəcəkdir!
-**Commands**
-
-**=>> Əmrlər 🎧**
-
-- /play: İstədiyiniz mahnı adını daxil edin.
+**ƏMRLƏR**
+- /play: [Mahnı adı] 
 - /play [Bir mahnıya yanıt]: Yanıt verdiyiniz mahnını oxuyur
-
-**=>> ADMİN ⏯**
-
+**ADMİN**
 - /player: Musiqi idarə panelini açır
 - /skip: Mahnılar arası keçid edir
 - /pause: Mahnıya ara verir
@@ -52,15 +40,14 @@ f"""
 - /end: Mahnını dayandırır
 - /current: Hazırda oxuyan mahnını göstərir
 - /playlist: Hazırda tələb olunan mahnı siyası
-
-
-        
-
-**=>> Kanal Muzik grulumu üçün irəli 🛠**
-""",
+**Kanal Muzik grulumu üçün irəli**
+""",    
 f"""
-⚪️ For linked group admins only:
-
+**QURULUM**
+Botu və asistan kanala admin olaraq əlavə edin!
+Ardından kanalın bağlı olduğu qrupda əmirlərdən istifadə edin
+⚠️**KANALDA SƏSLİ SÖHBƏTİ AÇMAĞI UNUTMAYIN**⚠️
+**Kanal Muzik Əmrlər**
 - /cplay: [Mahnı adı] 
 - /cplayer: Musiqi idarə panelini açır
 - /cskip: Mahnılar arası keçid edir
@@ -70,19 +57,11 @@ f"""
 - /ccurrent: Hazırda oxuyan mahnını göstərir
 - /cplaylist: Hazırda tələb olunan mahnı siyası
 - /userbotjoinchannel - Asistanı grupa əlavə et
-channel is also can be used instead of c ( /cplay = /channelplay )
-
-
-
+""",
 f"""
-**=>> Daha çox 🧑‍🔧**
-
-
+**Daha çox**
 - /admincache: Grupda admin siyahısını yeniləyir
 - /userbotjoin: @{ASSISTANT_NAME} grupa dəvət et
-
-
-
 /play, /current  və /playlist Xaric digər əmrlər adminlər üçündür
 """,
 """
