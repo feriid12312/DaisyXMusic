@@ -39,4 +39,4 @@ async def bye(client, message):
                 failed=failed+1
                 await lol.edit(f"Göndərilir.. Sent: {sent} chats. Failed: {failed} chats.")
             await asyncio.sleep(3)
-        await message.reply_text(f"Gcasted message to {sent} chats. Failed {failed} chats.")
+        await message.reply_text(f"Göndərilən mesaj {sent} chats. Failed {failed} chats.")
