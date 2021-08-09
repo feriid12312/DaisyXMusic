@@ -447,7 +447,7 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                        f"<b>🔴 Flood Xətası 🔴 \nİstifadəçi {user.first_name} Grupunuza qatıla bilmədi bunu səbəbi Asistan bir çox qurupda olması və ya adminlərdən biri onu grupda banladı"
-                        "\n\nVə ya @AzRobotGroup support grupundan dəstək istəyin</b>",
+                        "\n\nVə ya @BTCSohbet support grupundan dəstək istəyin</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -587,7 +587,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "RythmMusiqiAze"
+        user.first_name = "BTCMusicAssistant"
     usar = user
     wew = usar.id
     try:
@@ -715,7 +715,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "GroupMuzikAz"
+        user.first_name = "BTCMusicAssistant"
     usar = user
     wew = usar.id
     try:
