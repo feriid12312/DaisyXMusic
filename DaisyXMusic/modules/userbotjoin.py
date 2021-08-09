@@ -22,7 +22,7 @@ from DaisyXMusic.helpers.decorators import authorized_users_only, errors
 from DaisyXMusic.services.callsmusic.callsmusic import client as USER
 
 
-@Client.on_message(filters.command(["userjoin"]) & ~filters.private & ~filters.bot)
+@Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
 @authorized_users_only
 @errors
 async def addchannel(client, message):
